@@ -1,0 +1,11 @@
+site_name: imobiliaria
+site_description: Gerenciamento de clientes de uma imobiliaria
+repo_url: https://github.com/lcbarboza/imobiliaria-api
+site_dir: site
+copyright: Copyright &copy; 2015, <a href="https://github.com/lcbarboza">lcbarboza</a>.
+
+pages:
+  - Home: 'index.md'
+  - API:
+    - Authentication: 'api/authentication.md'
+    - Users: 'api/users.md'
