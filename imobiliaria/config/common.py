@@ -53,7 +53,13 @@ class Common(Configuration):
     )
 
     # Postgres
-    DATABASES = values.DatabaseURLValue('postgres://localhost/imobiliaria')
+    # DATABASES = values.DatabaseURLValue('postgres://localhost/imobiliaria')
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'imobiliaria',
+        }
+    }
 
     # General
     APPEND_SLASH = values.BooleanValue(False)
